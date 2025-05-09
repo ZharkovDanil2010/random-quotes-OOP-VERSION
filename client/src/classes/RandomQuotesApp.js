@@ -20,17 +20,17 @@ class RandomQuoteApp {
     this.currentQuote = newQuote;
     this.displayCurrentQuote();
   }
-  getRandomQuote() {
+  randomQuoteHandler() {
     const randomQuote = RandomQuote.getRandomQuote();
     this.changeCurrentQuote(randomQuote);
   }
-  async getRandomQuoteViaApi() {
+  async randomQuoteViaApiHandler() {
     const quoteViaAPI = await RandomQuote.getRandomQuoteViaApi()
       this.changeCurrentQuote(quoteViaAPI);
   }
   init(){
-    this.randomQuoteBtn.addEventListener('click', () => this.getRandomQuote())
-    this.randomQuoteApiBtn.addEventListener('click', () => this.getRandomQuoteViaApi())
+    this.randomQuoteBtn.addEventListener('click', () => this.randomQuoteHandler())
+    this.randomQuoteApiBtn.addEventListener('click', () => this.randomQuoteViaApiHandler())
   }
 }
 

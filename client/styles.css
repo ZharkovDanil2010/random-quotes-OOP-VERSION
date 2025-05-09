@@ -21,11 +21,22 @@ body {
 
 .btn-primary {
   background-color: #007bff;
+  transition: 0.3s;
 }
 
 .btn-primary:hover {
   background-color: #0056b3;
 }
+
+.btn-secondary {
+  background-color: #6caf5b;
+  transition: 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #4c7a40;
+}
+
 
 .btn-danger {
   background-color: transparent;
