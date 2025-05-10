@@ -12,6 +12,7 @@ body {
 
 .btn {
   padding: 10px 20px;
+  margin: 6px;
   font-size: 16px;
   color: white;
   border: none;
@@ -35,6 +36,14 @@ body {
 
 .btn-secondary:hover {
   background-color: #4c7a40;
+}
+.btn-third {
+  background-color: #b9434d;
+  transition: 0.3s;
+}
+
+.btn-third:hover {
+  background-color: #86252d;
 }
 
 
