@@ -19,7 +19,7 @@ class RandomQuote {
     } 
   }
   static async getRandomQuoteViaOwnApi() {
-    const url = 'http://localhost:3000/quotes/random-single';
+    const url = 'https://random-quotes-oop-version.onrender.com/quotes/random-single';
     try {
       const response = await fetch(url);
       const { id, text, author } = await response.json();
